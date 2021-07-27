@@ -1,0 +1,59 @@
+.navbar__button-first {
+  border-radius: 0px;
+}
+
+.navbar__button {
+  border-radius: 0px;
+  margin-left: 8px;
+  color: #0071c2;
+}
+
+.accordion__sign {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-left: 16px;
+}
+
+.accordion__card-body {
+  background-color: #fff0e0;
+  padding: 0;
+}
+
+.accordion__card-body-row {
+  margin: 0 auto;
+  max-width: 1140;
+  padding-left: 72px;
+  padding-bottom: 12px;
+}
+
+.footer__jumbotron {
+  background: #00224f;
+  margin: 0px;
+}
+
+.seperator {
+  width: 100%;
+}
+
+.controls-wrapper {
+  width: 100%;
+}
+
+.DateInput {
+  padding-right: 0px !important;
+}
+
+.bui-stepper__display {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  min-width: 36px;
+  margin: 0 4px;
+}
+
+.bui-button {
+  width: 42px;
+  height: 36px;
+}

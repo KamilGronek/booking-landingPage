@@ -1,0 +1,170 @@
+.searchbox {
+  margin: 0 auto;
+  max-width: 1140;
+  padding: 0 1.0875rem 1.45rem;
+}
+
+.searchbox__guest-toggle {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 0 40px 0 46px;
+  white-space: nowrap;
+  height: 56px;
+  border: 4px solid #febb02;
+}
+
+.searchbox__overlay {
+  margin: 100xp !important;
+}
+
+.searchbox__overlay-popover {
+  padding: 24px 24px 8px;
+  /* margin: 112px 0px 0px; */
+  border-radius: 4px;
+  /* position:fixed; */
+}
+
+.searchbox__value {
+  padding: 13px;
+}
+
+.searchbox__label {
+  margin-bottom: 0px;
+}
+
+.searchbox__span {
+  color: #6b6b6b;
+}
+
+.searchbox_button {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  height: 52px;
+  min-width: 100% !important;
+  margin: 0;
+  white-space: nowrap;
+  padding: 5px 32px;
+  height: 56px;
+  border: 4px solid #febb02;
+}
+
+/* .searchbox__overlay-popover-button{
+    border-radius: 0px;
+    color:#0071c2;
+    border: 1px solid #0071c2 ;
+   } */
+
+.bs-popover-bottom {
+  padding-top: 0px !important;
+}
+
+.popover-body {
+  padding-top: 16px;
+}
+
+#popover-contained {
+  margin-top: 26px;
+  padding-top: 8px;
+}
+
+.fade {
+  margin: 100xp !important;
+}
+
+.custom-select {
+  width: 109px;
+  margin-right: 16px;
+  margin-top: 16px;
+  border-radius: 0px;
+  border: 1px solid #0071c2;
+}
+
+.DateRangePickerInput {
+  width: 285px;
+}
+
+.DateRangePickerInput_calendarIcon {
+  padding: 0px;
+}
+
+.DateInput_1 {
+  width: 100px;
+}
+
+.DateInput_input {
+  padding-right: 0px;
+}
+
+.DateInput_fang {
+  display: none;
+}
+
+.DateInput_input__focused {
+  border-bottom: none;
+}
+
+.arrow {
+  display: none !important;
+}
+
+.entry-point__button_small {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: inline;
+  white-space: nowrap;
+}
+
+.MuiAutocomplete-root {
+  border: 4px solid #febb02;
+  height: 56px;
+}
+
+.MuiInputBase-root {
+  height: 48px;
+  background-color: #ffffff;
+}
+
+.DateRangePickerInput {
+  display: flex;
+  align-items: center;
+  border: 4px solid #febb02;
+  height: 56px;
+}
+
+.bs-popover-bottom {
+  padding-top: 50px;
+  width: 370px;
+  max-width: none;
+}
+
+@media (max-width: 1000px) {
+  .searchbox__autocomplete {
+    padding-left: 0px;
+  }
+  .searchbox__button {
+    padding-right: 0px;
+  }
+  .searchbox__select {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .DateRangePickerInput {
+    width: 356px;
+  }
+}
+
+@media (max-width: 575px) {
+  .DateRangePickerInput {
+    width: 540px;
+  }
+}

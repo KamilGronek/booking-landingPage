@@ -1,0 +1,26 @@
+.sectionArticles__img {
+  width: 350px;
+  height: 320px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.sectionArticles__imgBottom {
+  width: 539px;
+  height: 320px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.sectionArticles__column {
+  position: relative;
+}
+
+.sectionArticles__column-img {
+  position: absolute;
+  color: #fff;
+  padding: 10px 10px 15px;
+}
+
+.sectionArticles__column-p {
+  margin: "5px 0";
+}
