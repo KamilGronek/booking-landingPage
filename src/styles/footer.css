@@ -24,6 +24,12 @@
   color: #fff;
 }
 
+.footer__title-checkbox {
+  color: #fff;
+  margin-left: 30px;
+  font-size: 13px;
+}
+
 .footer__subscribe {
   background-color: "#003580";
   padding: 15px 10px;
@@ -56,4 +62,19 @@
 .footer__extranet-link {
   color: #6b6b6b;
   font-size: 12px;
+}
+
+@media (max-width: 360px) {
+  /* .footer__jumbotron-input {
+    padding-left: 30px;
+  } */
+  /* #button-addon2 {
+    padding-right: 30px;
+  } */
+  .styledSection__PostCardPrice-jCvLaP {
+    margin-right: -40px;
+  }
+  .footer__container {
+    display: none;
+  }
 }

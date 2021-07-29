@@ -24,3 +24,19 @@
 .sectionArticles__column-p {
   margin: "5px 0";
 }
+
+@media (max-width: 360px) {
+  .sectionArticles__img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 360px) {
+  .sectionArticles__imgBottom {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+  }
+}

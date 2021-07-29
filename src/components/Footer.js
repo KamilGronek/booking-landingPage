@@ -16,8 +16,9 @@ const Footer = () => {
           Sign up and we'll send the best deals to you
         </p>
         <Row>
-          <InputGroup className="mb-3">
-            <FormControl style={{height:"48px"}}
+          <InputGroup className="footer__jumbotron-input mb-3">
+            <FormControl 
+            style={{height:"48px"}}
               placeholder="Your email"
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
@@ -26,7 +27,7 @@ const Footer = () => {
               Subscribe
             </Button>
           </InputGroup>
-          <Form.Check className="footer__title" type="checkbox" id="autoSizingCheck2" label=" Send me a link to get the FREE Booking.com app!" />
+          <Form.Check className="footer__title-checkbox" type="checkbox" id="autoSizingCheck2" label=" Send me a link to get the FREE Booking.com app!" />
         </Row>
       </Jumbotron>
 
@@ -81,7 +82,7 @@ const Footer = () => {
         }}
       >
         <Row style={{ padding: "16px 0px" }}>
-          <Col>
+          <Col >
             {arrayNavigationLinks
               .slice(0, 7)
               .map(link => (
@@ -126,7 +127,6 @@ const Footer = () => {
                 </ul>
               ))}
           </Col>
-
         </Row>
         <Row className="d-flex justify-content-center">
           <a className="footer__navigation-a" href="https://admin.booking.com/?lang=xu&amp;utm_source=extranet_login_footer&amp;utm_medium=frontend&amp;utm_campaign=login_footer_v0" data-ga-track="click|Footer|Click - Extranet login|index">

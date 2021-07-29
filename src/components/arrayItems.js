@@ -1,9 +1,11 @@
 import React from "react"
+import "../styles/mainSection.css"
 
 const getImg = (imageLocation) => {
     return (
-        <img
-            src={`https://cf.bstatic.com/images/city/207x135/${imageLocation}`} />
+        <img className="mainSection__displayCountries-img"
+            src={`https://cf.bstatic.com/images/city/207x135/${imageLocation}`} 
+        />
     )
 }
 

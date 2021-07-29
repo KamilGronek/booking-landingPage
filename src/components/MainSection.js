@@ -87,8 +87,8 @@ const MainSection = () => {
                 .slice(pagesVisited, pagesVisited + countriesPerPage)
                 .map((item) => (
                     <>
-                        <div key={item} className="mainSection__displayCountries" >
-                            <div> {item.img}</div>
+                        <div key={item} className="mainSection__displayCountries">
+                            <div>{item.img}</div>
                             <p className="overlay ellipsis">
                                 {item.text}
                             </p>
@@ -125,12 +125,8 @@ const MainSection = () => {
                         </h3>
                         <p className="mainSection__p">25 properties</p>
                     </PostCardPlace>
-                    <img
-                        style={{
-                            width: "539px",
-                            height: "320px",
-                            objectFit: "cover"
-                        }}
+                    <img className="mainSection__img2"
+                     
                         src="https://cf.bstatic.com/xdata/images/city/540x270/957800.webp?k=6e50f4c36265ab07bf1c6498c298d8a9de40400f606365b83266a3e7ffe67877&amp;o=" alt="" />
                     <PostCardPrice>
                         <PostCardSpan>
@@ -154,15 +150,10 @@ const MainSection = () => {
                         </h3>
                         <p className="mainSection__p">493 properties</p>
                     </PostCardPlace>
-                    <img
-                        style={{
-                            width: "539px",
-                            height: "320px",
-                            objectFit: "cover"
-                        }}
+                    <img className="mainSection__img2"
+                     
                         src="https://cf.bstatic.com/xdata/images/city/540x270/823860.webp?k=ad78ae3df378d8246dc7c5a486520020f40ea92ca3b08569514092bd1ec34750&amp;o=" alt="" />
-                    <PostCardPrice
-                    >
+                    <PostCardPrice>
                         <PostCardSpan>
                             Deals start at
                         </PostCardSpan>
@@ -323,12 +314,12 @@ const MainSection = () => {
                 </Tab>
             </Tabs>
             <h4>Discover</h4>
-            <Row className ="mainSection__pagination d-flex justify-content-end">
+            <Row className ="mainSection__pagination d-flex justify-content-end" style={{margin:"20px"}}>
                 <Pagination size="sm">{itemsPagination}</Pagination>
                 <a href="#">More countries</a>
             </Row>
             <br />
-            <Row className ="d-flex justify-content-between">
+            <Row className ="d-flex justify-content-between" style={{margin:"10px"}}>
                 {displayCountries()}
             </Row>
         </Container>

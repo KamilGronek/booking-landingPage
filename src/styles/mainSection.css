@@ -67,6 +67,12 @@
   color: #ffffff;
 }
 
+.mainSection__img2 {
+  width: 539px;
+  height: 320px;
+  object-fit: cover;
+}
+
 .mainSection__img {
   width: 350px;
   height: 270px;
@@ -107,5 +113,30 @@
     width: 539px;
     height: 270px;
     object-fit: cover;
+  }
+}
+
+@media (max-width: 360px) {
+  .mainSection__img2 {
+    width: 320px;
+    height: 270px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 360px) {
+  .mainSection__img {
+    width: 320px;
+    height: 270px;
+    object-fit: cover;
+  }
+  .mainSection__displayCountries-img {
+    width: 300px;
+  }
+  /* .mainSection__pagination {
+    margin-right: 30px;
+  } */
+  .mainSection__displayCountries:hover .overlay {
+    height: 195.66px;
   }
 }

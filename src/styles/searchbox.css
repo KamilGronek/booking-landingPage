@@ -157,7 +157,7 @@
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .DateRangePickerInput {
     width: 356px;
   }
@@ -165,6 +165,36 @@
 
 @media (max-width: 575px) {
   .DateRangePickerInput {
-    width: 540px;
+    width: 315px;
+  }
+} */
+
+@media (max-width: 411px) {
+  .DateRangePickerInput {
+    width: 406px;
   }
 }
+
+@media (max-width: 414px) {
+  .DateRangePickerInput {
+    width: 409px;
+  }
+}
+
+@media (max-width: 375px) {
+  .DateRangePickerInput {
+    width: 370px;
+  }
+}
+
+@media (max-width: 360px) {
+  .DateRangePickerInput {
+    width: 355px;
+  }
+}
+
+/* @media (max-width: 320px) {
+  .DateRangePickerInput {
+    width: 315px;
+  }
+} */

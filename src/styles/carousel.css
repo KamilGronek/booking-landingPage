@@ -115,3 +115,9 @@
     background: #fff !important;
   }
 }
+
+@media (max-width: 360px) {
+  .rec-arrow-right {
+    margin: 300px;
+  }
+}
