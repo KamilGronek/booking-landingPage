@@ -163,7 +163,7 @@ const MainSection = () => {
                     </PostCardPrice>
                 </Col>
             </Row>
-            <br />
+            {/* <br /> */}
             <Row style={{ paddingBottom: "15pxs" }}>
                 <Col md={4} sm={12} style={{ position: "relative", display: "flex" }}>
                     <PostCardPlace>
@@ -314,7 +314,7 @@ const MainSection = () => {
                 </Tab>
             </Tabs>
             <h4>Discover</h4>
-            <Row className ="mainSection__pagination d-flex justify-content-end" style={{margin:"20px"}}>
+            <Row className ="mainSection__pagination d-flex justify-content-end" style={{margin:"0px 20px"}}>
                 <Pagination size="sm">{itemsPagination}</Pagination>
                 <a href="#">More countries</a>
             </Row>

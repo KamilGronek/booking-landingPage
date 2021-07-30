@@ -11,6 +11,7 @@ import {
 import "../styles/carousel.css"
 
 
+
 const breakPoints = [
     { width: 220, itemsToShow: 1 },
     { width: 220, itemsToShow: 2, itemsToScroll: 2 },
@@ -18,6 +19,7 @@ const breakPoints = [
     { width: 220, itemsToShow: 4 },
     { width: 220, itemsToShow: 5 },
   ];
+
 
   const breakPoints2 = [
     { width: 220, itemsToShow: 1 },

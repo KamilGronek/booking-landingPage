@@ -3,9 +3,9 @@ import {
   Container, Row, Col,
   Form, Button, Jumbotron, InputGroup, FormControl
 } from 'react-bootstrap';
-
 import {arrayNavigationLinks} from "./arrayItems";
 import "../styles/footer.css";
+import { InputGroupRow,Input } from "../styledComponents/styledFooter";
 
 const Footer = () => {
   return (
@@ -15,9 +15,9 @@ const Footer = () => {
         <p className="footer__title">
           Sign up and we'll send the best deals to you
         </p>
-        <Row>
-          <InputGroup className="footer__jumbotron-input mb-3">
-            <FormControl 
+        <InputGroupRow>
+          <Input className="mb-3 input-group">
+            <FormControl className="footer__jumbotron-input"
             style={{height:"48px"}}
               placeholder="Your email"
               aria-label="Recipient's username"
@@ -26,9 +26,9 @@ const Footer = () => {
             <Button variant="primary" id="button-addon2">
               Subscribe
             </Button>
-          </InputGroup>
+          </Input>
           <Form.Check className="footer__title-checkbox" type="checkbox" id="autoSizingCheck2" label=" Send me a link to get the FREE Booking.com app!" />
-        </Row>
+        </InputGroupRow>
       </Jumbotron>
 
       <Row className="d-flex justify-content-center footer__subscribe">

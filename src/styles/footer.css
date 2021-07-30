@@ -26,7 +26,6 @@
 
 .footer__title-checkbox {
   color: #fff;
-  margin-left: 30px;
   font-size: 13px;
 }
 
@@ -65,9 +64,9 @@
 }
 
 @media (max-width: 360px) {
-  /* .footer__jumbotron-input {
-    padding-left: 30px;
-  } */
+  .footer__jumbotron-input {
+    width: 130px;
+  }
   /* #button-addon2 {
     padding-right: 30px;
   } */
@@ -76,5 +75,9 @@
   }
   .footer__container {
     display: none;
+  }
+  .footer_row {
+    display: flex;
+    justify-content: center;
   }
 }

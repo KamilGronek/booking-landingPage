@@ -116,8 +116,20 @@
   }
 }
 
+@media (max-width: 411px) {
+  .rec-arrow-right {
+    margin: 350px;
+  }
+  .carousel {
+    display: none;
+  }
+}
+
 @media (max-width: 360px) {
   .rec-arrow-right {
     margin: 300px;
+  }
+  .carousel {
+    display: none;
   }
 }

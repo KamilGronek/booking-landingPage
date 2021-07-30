@@ -116,27 +116,61 @@
   }
 }
 
+@media (max-width: 411px) {
+  .mainSection__img2 {
+    width: 380px;
+    height: 270px;
+    object-fit: cover;
+    margin-top: 20px;
+  }
+  .mainSection__img {
+    width: 380px;
+    height: 270px;
+    object-fit: cover;
+    margin-top: 20px;
+  }
+  .mainSection__displayCountries-img {
+    width: 350px;
+  }
+  .overlay {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainSection__img2 {
+    margin-bottom: 20px;
+  }
+}
+
+/*========360px============*/
+
 @media (max-width: 360px) {
   .mainSection__img2 {
     width: 320px;
     height: 270px;
     object-fit: cover;
+    margin-top: 20px;
   }
-}
-
-@media (max-width: 360px) {
   .mainSection__img {
     width: 320px;
     height: 270px;
     object-fit: cover;
+    margin-top: 20px;
   }
   .mainSection__displayCountries-img {
     width: 300px;
   }
-  /* .mainSection__pagination {
-    margin-right: 30px;
-  } */
+  .overlay {
+    width: 300px;
+  }
   .mainSection__displayCountries:hover .overlay {
     height: 195.66px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainSection__title {
+    display: none;
   }
 }
