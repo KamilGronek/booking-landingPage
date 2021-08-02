@@ -52,7 +52,7 @@ const SearchBox = () => {
 
   const [data, setData] = useState([]);
   const [search_text, setSearch_text] = useState("");
-  const [ color,setColor] = useState(false);
+  const [color,setColor] = useState(false);
 
   const api_key = 'pk.eyJ1Ijoia2FtaWxvemlnb2xvIiwiYSI6ImNrbHRsbHQzOTB4aHgyeG1wa3JobGV0MDQifQ.I4Hxd0pgy7exwHySBN04Ng'
 
@@ -161,7 +161,6 @@ const SearchBox = () => {
   }
 
   const handleChangeColor = () => {
-    console.log("zmien option")
     setColor(true)
   }
 
@@ -274,7 +273,7 @@ const SearchBox = () => {
                         {arrayForSelects.map((array) => (
                           <>
                             <select className="custom-select"
-                              style ={color ? style : style2}
+                              style ={color ? style2 : style}
                               key={array}
                               // onChange={handleChangeColor}
                             >

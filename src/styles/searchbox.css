@@ -104,12 +104,8 @@
   margin-top: 16px;
   border-radius: 0px;
   /* border: 1px solid #0071c2; */
-  border-color: #c00;
+  /* border-color: #c00; */
 }
-
-/* .sb-group-field-has-error {
-  border-color: #c00;
-} */
 
 .searchbox__label {
   padding: 8px 0px 1px;
@@ -222,10 +218,7 @@
   .DateRangePickerInput {
     width: 355px;
   }
-}
-
-/* @media (max-width: 320px) {
-  .DateRangePickerInput {
-    width: 315px;
+  .jumbotron-fluid {
+    height: 460px;
   }
-} */
+}
