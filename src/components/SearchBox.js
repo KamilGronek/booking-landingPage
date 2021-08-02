@@ -164,7 +164,6 @@ const SearchBox = () => {
     setColor(true)
   }
 
-
   return (
     <>
       <Jumbotron fluid className="searchbox" >
