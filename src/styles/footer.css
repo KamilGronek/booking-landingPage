@@ -63,6 +63,12 @@
   font-size: 12px;
 }
 
+@media (max-width: 411px) {
+  .footer__container {
+    display: none;
+  }
+}
+
 @media (max-width: 360px) {
   .footer__jumbotron-input {
     width: 130px;
@@ -72,9 +78,6 @@
   } */
   .styledSection__PostCardPrice-jCvLaP {
     margin-right: -40px;
-  }
-  .footer__container {
-    display: none;
   }
   .footer_row {
     display: flex;

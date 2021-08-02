@@ -2,14 +2,19 @@
   position: absolute;
   z-index: 200;
   margin: -25px;
-  background: #fff !important;
 }
 
 .rec-arrow-right {
   position: absolute;
   z-index: 300;
   margin: 1080px;
-  background: #fff !important;
+}
+
+.cGKbZh:hover:enabled,
+.cGKbZh:focus:enabled {
+  color: black !important;
+  background-color: white !important;
+  box-shadow: 0 0 2px 0 #333;
 }
 
 .rec-pagination {

@@ -18,6 +18,14 @@ import AutoComplete from "./AutoComplete"
 let DomParser = require('dom-parser');
 let parser = new DomParser();
 
+const style = {
+  borderColor: "#c00"
+}
+
+const style2 ={
+  border: "1px solid #0071c2"
+}
+
 const SearchBox = () => {
 
   const [show, setShow] = useState(false);
@@ -44,6 +52,7 @@ const SearchBox = () => {
 
   const [data, setData] = useState([]);
   const [search_text, setSearch_text] = useState("");
+  const [ color,setColor] = useState(false);
 
   const api_key = 'pk.eyJ1Ijoia2FtaWxvemlnb2xvIiwiYSI6ImNrbHRsbHQzOTB4aHgyeG1wa3JobGV0MDQifQ.I4Hxd0pgy7exwHySBN04Ng'
 
@@ -152,17 +161,17 @@ const SearchBox = () => {
   }
 
   const handleChangeColor = () => {
-    console.log("zmien kolor")
+    console.log("zmien option")
+    setColor(true)
   }
-
 
 
   return (
     <>
       <Jumbotron fluid >
         <Container className="searchbox">
-          <h3>Find deals on hotels, homes, and much more...</h3>
-          <p>From cozy country homes to funky city apartments</p>
+          <span className="searchbox__title-text">Find deals on hotels, homes, and much more...</span>
+          <p className="searchbox__subtitle-text">From cozy country homes to funky city apartments</p>
           <Row>
             <Col lg={4} sm={4} style={{ paddingRight: "0px" }} className="searchbox__autocomplete">
                 <AutoComplete 
@@ -221,7 +230,7 @@ const SearchBox = () => {
                   <Popover className="searchbox__overlay-popover" id="popover-contained" style={{ marginTop: "27px" }}>
                     <Popover.Content>
                       <Row className="d-flex justify-content-between align-items-center">
-                        <label>Adults</label>
+                        <label className="searchbox__overlay-popover-label">Adults</label>
                         <div>
                           {counterAdult == 1 ?
                             (<SearchboxButton disabled variant="light">
@@ -241,7 +250,7 @@ const SearchBox = () => {
                       <br />
                       <Row className="d-flex justify-content-between">
                         <div className="d-flex flex-column">
-                          <label className="searchbox__label">Children</label>
+                          <label className="searchbox__overlay-popover-label">Children</label>
                           <span className="searchbox__span">Ages 0 – 17</span>
                         </div>
                         <div>
@@ -265,11 +274,14 @@ const SearchBox = () => {
                         {arrayForSelects.map((array) => (
                           <>
                             <select className="custom-select"
+                              style ={color ? style : style2}
                               key={array}
+                              // onChange={handleChangeColor}
                             >
                               <option>Age needed</option>
                               {array.map(element => (
-                                <option value="element" key={element} onChange={handleChangeColor()}>
+                                <option 
+                                value="element" key={element}>
                                   {`${element} years old`}
                                 </option>
                               ))}
@@ -277,7 +289,7 @@ const SearchBox = () => {
                           </>
                         ))}
                         {counterChildren > 0 ?
-                          (<label style={{ padding: "8px 0xp 1px" }}>
+                          (<label className="searchbox__label">
                             To find a place to stay that fits your entire group
                             along with correct prices, we need to know how old
                             your children will be at check-out
@@ -287,7 +299,7 @@ const SearchBox = () => {
                       </Row>
                       <br />
                       <Row className="d-flex justify-content-between align-items-center">
-                        <label>Rooms</label>
+                        <label className="searchbox__overlay-popover-label">Rooms</label>
                         <div>
                           {counterRoom == 1 ?
                             (<SearchboxButton disabled variant="light">

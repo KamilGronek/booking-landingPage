@@ -143,21 +143,15 @@
   }
 }
 
-/*========360px============*/
-
 @media (max-width: 360px) {
-  .mainSection__img2 {
-    width: 320px;
-    height: 270px;
-    object-fit: cover;
-    margin-top: 20px;
-  }
+  .mainSection__img2,
   .mainSection__img {
     width: 320px;
     height: 270px;
     object-fit: cover;
     margin-top: 20px;
   }
+
   .mainSection__displayCountries-img {
     width: 300px;
   }
