@@ -167,8 +167,8 @@ const SearchBox = () => {
 
   return (
     <>
-      <Jumbotron fluid >
-        <Container className="searchbox">
+      <Jumbotron fluid className="searchbox" >
+        <Container className="searchbox_container">
           <span className="searchbox__title-text">Find deals on hotels, homes, and much more...</span>
           <p className="searchbox__subtitle-text">From cozy country homes to funky city apartments</p>
           <Row>

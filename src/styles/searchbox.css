@@ -1,8 +1,8 @@
-.jumbotron-fluid {
+.searchbox {
   height: 260px;
 }
 
-.searchbox {
+.searchbox_container {
   margin: 0 auto;
   max-width: 1140;
   padding: 0 1.0875rem 1.45rem;
@@ -218,7 +218,7 @@
   .DateRangePickerInput {
     width: 355px;
   }
-  .jumbotron-fluid {
+  .searchbox {
     height: 460px;
   }
 }
